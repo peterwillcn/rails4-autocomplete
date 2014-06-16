@@ -1,5 +1,6 @@
 # Changelog
 
+* 1.0.8 Added the option to use a custom message when no results are found
 * 1.0.7
   * mongoid: escape regular expression in search
   * When possible, use jQuery .on() rather than .live()

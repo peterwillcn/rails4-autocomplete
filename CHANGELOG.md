@@ -1,5 +1,6 @@
 # Changelog
 
+* 1.0.9 Fixed a problem in the change function. It was trying to parse as JSON a undefined value
 * 1.0.8 Added the option to use a custom message when no results are found
 * 1.0.7
   * mongoid: escape regular expression in search

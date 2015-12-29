@@ -1,3 +1,8 @@
+## Project Moved
+There has been some confusion around the naming as to where to find the Rails3 Rails4 and so on version of this gem due to the original naming. With the latest release I have taken the opportunity to address this by moving the official repo.
+
+The official repo is now located at [rails-jquery-autocomplete](https://github.com/bigtunacan/rails-jquery-autocomplete)
+
 ## Status
 [![Build Status](https://secure.travis-ci.org/peterwillcn/rails4-autocomplete.png)](https://travis-ci.org/peterwillcn/rails4-autocomplete) [![Gem Version](https://badge.fury.io/rb/rails4-autocomplete.png)](http://badge.fury.io/rb/rails4-autocomplete)
 

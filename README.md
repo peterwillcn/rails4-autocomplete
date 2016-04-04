@@ -35,13 +35,13 @@ I'd encourage you to understand how to use those 3 amazing tools before attempti
 
 ## Demo Application rails4-autocomplete-demo
 
-A live demo can be seen 
+A live demo can be seen
 
 [here](https://rocky-thicket-9286.herokuapp.com/)
 
-[source](https://github.com/yifeiwu/rails4-autocomplete-demo). 
+[source](https://github.com/yifeiwu/rails4-autocomplete-demo).
 
-As a new developer, I had some issues getting this to work by following the documentation. However after trying some things and reading [Yoni Weisbrod](http://www.yoniweisbrod.com/autocomplete-magic-with-rails/)'s blog post, I was able to make the autocomplete work and implement a few useful features. 
+As a new developer, I had some issues getting this to work by following the documentation. However after trying some things and reading [Yoni Weisbrod](http://www.yoniweisbrod.com/autocomplete-magic-with-rails/)'s blog post, I was able to make the autocomplete work and implement a few useful features.
 
 ## Installing
 
@@ -114,6 +114,12 @@ This will create an action _autocomplete_brand_name_ on your controller, don't f
     resources :products do
       get :autocomplete_brand_name, :on => :collection
     end
+### View
+
+In terms of view, you just add a _data :{ autocomplete_brand_name_brands_path}_ to the input attributes
+
+    = text_field_tag :search, params[:search], data: { autocomplete: autocomplete_brand_name_brands_path }
+
 
 ### Options
 
@@ -256,7 +262,7 @@ A javascript event named *railsAutocomplete.select* is fired on the input field 
 
 You can pass a custom message for when there is not results found. For this the element must have a data attribute named ```data-autocomplete-label```. For example:
 
-    autocomplete_field_tag 'address', '', address_autocomplete_path, :size => 75, 
+    autocomplete_field_tag 'address', '', address_autocomplete_path, :size => 75,
 	:"data-autocomplete-label" => "Sorry, nothing found."
 
 ## Formtastic
@@ -383,5 +389,3 @@ the integration tests. Feel free to remove them from the integration
 suite and move them into the main suite. Your tests will run much
 faster, and there will be less likelihood of your feature breaking in
 the future. Thanks!
-
-
